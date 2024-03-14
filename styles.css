@@ -1,0 +1,129 @@
+/* COLORS---
+BACKGROUND: #3a3153
+TEXT: fefdfd
+HIGHLIGHT: #bd58cd
+--- */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* KEYFRAMES */
+@keyframes fade-down {
+    0%  {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+/* KEYFRAMES */
+
+/* HEADER START--- */
+li, a{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 18px;
+    color: 	#fefdfd;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20%;
+}
+/* HEADER END--- */
+
+/* NAVBAR START--- */
+.nav_links{
+    width: 450px;
+    text-align: center;
+    list-style: none;
+    border-radius: 30px;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 20px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    color: #bd58cd;
+}
+/* NAVBAR END--- */
+
+body{
+    min-height: 100vh;
+    background-color: #3a3153;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-family: Poppins;
+    font-size: 58px;
+    font-weight: 900px;
+    color: 	#fefdfd;
+    text-align: left;
+    padding: 30px;
+    
+}
+p{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    color: 	#fefdfd;
+    text-align: justify;
+    padding: 30px;
+}
+footer{
+    margin-top: auto;
+    font-family: Poppins;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fefdfd;
+}
+
+
+/* CONTAINER START--- */
+.resume{
+    color: red;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: underline;
+}
+.container{
+    animation: fade-down 1s;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.about{
+    width: 600px;
+    height: 600px;
+    border-radius: 30px;
+}
+.commissions{
+    width: 600px;
+    height: 600px;
+    border-radius: 30px;
+}
+.portfolio{
+    width: 600px;
+    height: 600px;
+    border-radius: 30px;
+}
+.behance{
+    padding: 30px;
+    text-align: center;
+}
+.special{
+    color: #bd58cd;
+}
+/* CONTAINER END--- */
